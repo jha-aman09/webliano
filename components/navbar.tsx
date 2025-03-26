@@ -42,7 +42,7 @@ export function Navbar() {
         isScrolled ? "bg-background/90 backdrop-blur-md border-b shadow-sm py-4" : "bg-transparent py-6",
       )}
     >
-      <div className="container px-6 sm:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full flex items-center justify-between">
         <Link href="/" className="font-bold text-2xl">
           Webliano
         </Link>
