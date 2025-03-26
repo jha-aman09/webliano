@@ -75,7 +75,7 @@ export function Navbar() {
                       >
                         <div className="mb-4">
                           <Image
-                            src="/placehold.svg"
+                            src="/placeholder.jpg"
                             width={240}
                             height={100}
                             alt="Services overview"
