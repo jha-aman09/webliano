@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
@@ -72,7 +73,16 @@ export function Navbar() {
                         href="/services"
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">All Services</div>
+                        <div className="mb-4">
+                          <Image
+                            src="/placehold.svg"
+                            width={240}
+                            height={100}
+                            alt="Services overview"
+                            className="rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <div className="mb-2 text-lg font-medium">All Services</div>
                         <p className="text-sm leading-tight text-muted-foreground">
                           Comprehensive solutions to elevate your e-commerce presence
                         </p>
