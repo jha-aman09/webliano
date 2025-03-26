@@ -247,59 +247,104 @@ export default function Home() {
                 </p>
               </div>
             </FadeIn>
-            <div className="max-w-3xl mx-auto">
-              {/* Step 1 */}
-              <FadeIn delay={100}>
-                <div className="relative pb-16">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold z-10">
-                      1
-                    </div>
-                    <div className="ml-6">
-                      <h3 className="text-xl font-semibold mb-3">Consultation</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        We begin with an in-depth discussion to understand your business, goals, and challenges.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="absolute top-12 left-6 h-full w-0.5 bg-primary/20 dark:bg-primary/10"></div>
-                </div>
-              </FadeIn>
 
-              {/* Step 2 */}
-              <FadeIn delay={200}>
-                <div className="relative pb-16">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold z-10">
-                      2
-                    </div>
-                    <div className="ml-6">
-                      <h3 className="text-xl font-semibold mb-3">Strategy & Development</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        We craft a tailored solution and develop it with precision and attention to detail.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="absolute top-12 left-6 h-full w-0.5 bg-primary/20 dark:bg-primary/10"></div>
-                </div>
-              </FadeIn>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative">
+                {/* Timeline line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary/80 via-primary to-primary/80 rounded-full"></div>
 
-              {/* Step 3 */}
-              <FadeIn delay={300}>
-                <div className="relative">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold z-10">
-                      3
-                    </div>
-                    <div className="ml-6">
-                      <h3 className="text-xl font-semibold mb-3">Implementation & Support</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        We deploy your solution and provide ongoing support and refinement for continued success.
-                      </p>
+                {/* Step 1 - Left side (odd) */}
+                <FadeIn delay={100}>
+                  <div className="relative mb-12 md:mb-24">
+                    <div className="flex flex-col md:flex-row items-center">
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
+                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-3">Discovery & Consultation</h3>
+                          <p className="text-gray-600 dark:text-gray-300">
+                            We begin with an in-depth discussion to understand your business, goals, and challenges.
+                            This phase helps us identify your unique needs and opportunities.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
+                        <div className="bg-primary text-primary-foreground rounded-full h-14 w-14 flex items-center justify-center text-xl font-bold shadow-lg">
+                          1
+                        </div>
+                      </div>
+                      <div className="md:w-1/2 md:pl-8 order-3 hidden md:block"></div>
                     </div>
                   </div>
-                </div>
-              </FadeIn>
+                </FadeIn>
+
+                {/* Step 2 - Right side (even) */}
+                <FadeIn delay={200}>
+                  <div className="relative mb-12 md:mb-24">
+                    <div className="flex flex-col md:flex-row items-center">
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 hidden md:block"></div>
+                      <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
+                        <div className="bg-primary text-primary-foreground rounded-full h-14 w-14 flex items-center justify-center text-xl font-bold shadow-lg">
+                          2
+                        </div>
+                      </div>
+                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-6 md:mt-0">
+                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-3">Strategy & Planning</h3>
+                          <p className="text-gray-600 dark:text-gray-300">
+                            Based on our findings, we develop a comprehensive strategy tailored to your specific
+                            requirements, outlining clear objectives, timelines, and deliverables.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </FadeIn>
+
+                {/* Step 3 - Left side (odd) */}
+                <FadeIn delay={300}>
+                  <div className="relative mb-12 md:mb-24">
+                    <div className="flex flex-col md:flex-row items-center">
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
+                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-3">Design & Development</h3>
+                          <p className="text-gray-600 dark:text-gray-300">
+                            Our team of experts brings your vision to life, creating solutions with precision and
+                            attention to detail while keeping you involved throughout the process.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
+                        <div className="bg-primary text-primary-foreground rounded-full h-14 w-14 flex items-center justify-center text-xl font-bold shadow-lg">
+                          3
+                        </div>
+                      </div>
+                      <div className="md:w-1/2 md:pl-8 order-3 hidden md:block"></div>
+                    </div>
+                  </div>
+                </FadeIn>
+
+                {/* Step 4 - Right side (even) */}
+                <FadeIn delay={400}>
+                  <div className="relative">
+                    <div className="flex flex-col md:flex-row items-center">
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 hidden md:block"></div>
+                      <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
+                        <div className="bg-primary text-primary-foreground rounded-full h-14 w-14 flex items-center justify-center text-xl font-bold shadow-lg">
+                          4
+                        </div>
+                      </div>
+                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-6 md:mt-0">
+                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-3">Implementation & Support</h3>
+                          <p className="text-gray-600 dark:text-gray-300">
+                            We deploy your solution and provide ongoing support, monitoring, and refinement to ensure
+                            continued success and adaptation to changing needs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
             </div>
           </div>
         </section>
