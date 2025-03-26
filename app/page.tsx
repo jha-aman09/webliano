@@ -255,7 +255,7 @@ export default function Home() {
 
                 {/* Step 1 - Left side (odd) */}
                 <FadeIn delay={100}>
-                  <div className="relative mb-12 md:mb-24">
+                  <div className="relative mb-8 md:mb-16">
                     <div className="flex flex-col md:flex-row items-center">
                       <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
                         <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
@@ -278,7 +278,7 @@ export default function Home() {
 
                 {/* Step 2 - Right side (even) */}
                 <FadeIn delay={200}>
-                  <div className="relative mb-12 md:mb-24">
+                  <div className="relative mb-8 md:mb-16">
                     <div className="flex flex-col md:flex-row items-center">
                       <div className="md:w-1/2 md:pr-8 order-2 md:order-1 hidden md:block"></div>
                       <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
@@ -301,7 +301,7 @@ export default function Home() {
 
                 {/* Step 3 - Left side (odd) */}
                 <FadeIn delay={300}>
-                  <div className="relative mb-12 md:mb-24">
+                  <div className="relative mb-8 md:mb-16">
                     <div className="flex flex-col md:flex-row items-center">
                       <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
                         <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
