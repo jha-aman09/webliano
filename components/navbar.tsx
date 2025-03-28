@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { Menu, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -330,17 +330,10 @@ export function Navbar() {
           <SheetContent side="right" className="w-[300px] p-0">
             <div className="flex flex-col h-full">
               <div className="p-4 border-b">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center">
                   <Link href="/" className="font-bold text-xl text-primary">
                     Webliano
                   </Link>
-                  <button
-                    className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors"
-                    onClick={() => setIsOpen(false)}
-                    aria-label="Close menu"
-                  >
-                    <X className="h-5 w-5" />
-                  </button>
                 </div>
               </div>
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
