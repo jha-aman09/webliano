@@ -1,9 +1,10 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight, BarChart3, Globe, ImageIcon, Search, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations"
 import { ServiceCardSwiper } from "@/components/service-card-swiper"
+import { WebsiteMockup } from "@/components/website-mockup"
+import Image from "next/image"
 
 export default function Home() {
   const serviceCards = [
@@ -52,19 +53,12 @@ export default function Home() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
-              {/* Image - Now first in DOM order for mobile */}
+              {/* Wireframe Mockup - Now first in DOM order for mobile */}
               <FadeIn delay={300} direction="left" className="lg:order-last mb-6 lg:mb-0">
                 <div className="flex items-center justify-center">
                   <div className="w-full relative">
                     <div className="aspect-[16/9] bg-muted/30 dark:bg-muted/10 rounded-xl p-2 md:p-4 transition-all duration-300 hover:shadow-xl">
-                      <Image
-                        src="/placeholder.svg?height=450&width=800"
-                        width={800}
-                        height={450}
-                        alt="Webliano platform dashboard"
-                        className="rounded-lg shadow-xl w-full h-full object-cover"
-                        priority
-                      />
+                      <WebsiteMockup />
                     </div>
                     <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 md:-bottom-8 md:-right-8 bg-background rounded-full p-2 sm:p-3 md:p-4 shadow-lg">
                       <div className="bg-primary/10 rounded-full p-2 sm:p-3 md:p-4">
