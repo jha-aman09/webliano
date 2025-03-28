@@ -46,7 +46,7 @@ export function WebsiteMockup() {
           style={{ backgroundColor: urlBarBg }}
         >
           <span className="text-sm font-medium" style={{ color: urlText }}>
-            webliano.com
+            <a href="https://webliano.com">webliano.com</a>
           </span>
         </div>
 
