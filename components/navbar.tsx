@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, ArrowRight } from 'lucide-react'
+import { Menu, X, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -328,7 +328,6 @@ export function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] p-0">
-            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col h-full">
               <div className="p-4 border-b">
                 <div className="flex items-center justify-between">
@@ -344,6 +343,7 @@ export function Navbar() {
                   </button>
                 </div>
               </div>
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <nav className="flex flex-col p-4">
                 <div className="mb-4">
                   <div className="text-sm font-medium text-muted-foreground mb-3">Services</div>
@@ -570,3 +570,4 @@ export function Navbar() {
     </header>
   )
 }
+
