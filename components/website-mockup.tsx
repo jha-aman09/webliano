@@ -42,7 +42,7 @@ export function WebsiteMockup() {
 
         {/* URL Bar */}
         <div
-          className="mx-auto flex items-center px-4 py-1 rounded-md max-w-md w-full"
+          className="mx-4 flex items-center px-4 py-1 rounded-md max-w-md w-full"
           style={{ backgroundColor: urlBarBg }}
         >
           <span className="text-sm font-medium" style={{ color: urlText }}>
