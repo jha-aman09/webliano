@@ -9,7 +9,7 @@ export default function AboutPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-muted/30 dark:bg-muted/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-32">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
                 About Webliano
@@ -22,7 +22,7 @@ export default function AboutPage() {
         </section>
 
         {/* Story Section */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
         </section>
 
         {/* Mission and Values */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl font-bold mb-6">Our Mission & Values</h2>
@@ -101,7 +101,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team Section */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl font-bold mb-6">Meet Our Team</h2>
@@ -186,7 +186,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -248,7 +248,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">
               <div className="max-w-3xl mx-auto text-center">

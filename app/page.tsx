@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations"
 import { ServiceCardSwiper } from "@/components/service-card-swiper"
 import { WebsiteMockup } from "@/components/website-mockup"
-import Image from "next/image"
+import { TestimonialSwiper } from "@/components/testimonial-swiper"
 
 export default function Home() {
   const serviceCards = [
@@ -43,6 +43,49 @@ export default function Home() {
       title: "Discover All Services",
       description: "Explore our complete range of e-commerce enhancement solutions.",
       link: "/services",
+    },
+  ]
+
+  const testimonials = [
+    {
+      content:
+        "Webliano's performance optimization service took our website from loading in 6 seconds to under 2 seconds. The impact was immediate - our bounce rate dropped by 30% and user engagement metrics improved across the board.",
+      author: "David Park",
+      role: "CTO",
+      company: "FastTrack",
+      rating: 5,
+      image: "/placeholder.svg?height=128&width=128",
+      tag: "SaaS",
+    },
+    {
+      content:
+        "The data analysis services provided by Webliano have been game-changing for our business strategy. We've been able to identify key growth opportunities and optimize our product offerings based on real customer insights.",
+      author: "Michael Chen",
+      role: "Founder",
+      company: "TechGadgets",
+      rating: 5,
+      image: "/placeholder.svg?height=128&width=128",
+      tag: "E-commerce",
+    },
+    {
+      content:
+        "Working with Webliano has been a breath of fresh air. Their SEO strategies helped us rank on the first page for our key products, and their content team created compelling product descriptions that truly showcase our offerings.",
+      author: "Emma Rodriguez",
+      role: "Marketing Director",
+      company: "Eco Essentials",
+      rating: 4,
+      image: "/placeholder.svg?height=128&width=128",
+      tag: "Retail",
+    },
+    {
+      content:
+        "The photo editing services from Webliano elevated our product imagery to a professional level. We've seen a significant increase in engagement and time spent on our product pages since implementing their visual improvements.",
+      author: "David Kim",
+      role: "E-commerce Manager",
+      company: "Luxury Home Goods",
+      rating: 5,
+      image: "/placeholder.svg?height=128&width=128",
+      tag: "Luxury",
     },
   ]
 
@@ -106,7 +149,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
@@ -234,8 +277,8 @@ export default function Home() {
         <section className="py-16 relative bg-grid-pattern">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <FadeIn>
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Refined Process</h2>
+              <div className="text-center max-w-3xl mx-auto mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Refined Process</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   A seamless journey from initial consultation to ongoing support.
                 </p>
@@ -249,11 +292,11 @@ export default function Home() {
 
                 {/* Step 1 - Left side (odd) */}
                 <FadeIn delay={100}>
-                  <div className="relative mb-8 md:mb-16">
+                  <div className="relative mb-4 md:mb-8">
                     <div className="flex flex-col md:flex-row items-center">
-                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
-                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
-                          <h3 className="text-xl font-semibold mb-3">Discovery & Consultation</h3>
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-4 md:mt-0 flex justify-end">
+                        <div className="bg-background rounded-xl p-5 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-2">Discovery & Consultation</h3>
                           <p className="text-gray-600 dark:text-gray-300">
                             We begin with an in-depth discussion to understand your business, goals, and challenges.
                             This phase helps us identify your unique needs and opportunities.
@@ -272,7 +315,7 @@ export default function Home() {
 
                 {/* Step 2 - Right side (even) */}
                 <FadeIn delay={200}>
-                  <div className="relative mb-8 md:mb-16">
+                  <div className="relative mb-4 md:mb-8">
                     <div className="flex flex-col md:flex-row items-center">
                       <div className="md:w-1/2 md:pr-8 order-2 md:order-1 hidden md:block"></div>
                       <div className="md:mx-auto flex items-center justify-center order-1 md:order-2 z-10">
@@ -280,9 +323,9 @@ export default function Home() {
                           2
                         </div>
                       </div>
-                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-6 md:mt-0">
-                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
-                          <h3 className="text-xl font-semibold mb-3">Strategy & Planning</h3>
+                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-4 md:mt-0">
+                        <div className="bg-background rounded-xl p-5 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-2">Strategy & Planning</h3>
                           <p className="text-gray-600 dark:text-gray-300">
                             Based on our findings, we develop a comprehensive strategy tailored to your specific
                             requirements, outlining clear objectives, timelines, and deliverables.
@@ -295,11 +338,11 @@ export default function Home() {
 
                 {/* Step 3 - Left side (odd) */}
                 <FadeIn delay={300}>
-                  <div className="relative mb-8 md:mb-16">
+                  <div className="relative mb-4 md:mb-8">
                     <div className="flex flex-col md:flex-row items-center">
-                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-6 md:mt-0 flex justify-end">
-                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
-                          <h3 className="text-xl font-semibold mb-3">Design & Development</h3>
+                      <div className="md:w-1/2 md:pr-8 order-2 md:order-1 mt-4 md:mt-0 flex justify-end">
+                        <div className="bg-background rounded-xl p-5 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-2">Design & Development</h3>
                           <p className="text-gray-600 dark:text-gray-300">
                             Our team of experts brings your vision to life, creating solutions with precision and
                             attention to detail while keeping you involved throughout the process.
@@ -326,9 +369,9 @@ export default function Home() {
                           4
                         </div>
                       </div>
-                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-6 md:mt-0">
-                        <div className="bg-background rounded-xl p-6 shadow-md border border-muted md:max-w-sm">
-                          <h3 className="text-xl font-semibold mb-3">Implementation & Support</h3>
+                      <div className="md:w-1/2 md:pl-8 order-3 md:order-3 mt-4 md:mt-0">
+                        <div className="bg-background rounded-xl p-5 shadow-md border border-muted md:max-w-sm">
+                          <h3 className="text-xl font-semibold mb-2">Implementation & Support</h3>
                           <p className="text-gray-600 dark:text-gray-300">
                             We deploy your solution and provide ongoing support, monitoring, and refinement to ensure
                             continued success and adaptation to changing needs.
@@ -347,7 +390,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
@@ -357,64 +400,18 @@ export default function Home() {
                 </p>
               </div>
             </FadeIn>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Testimonial 1 */}
-              <FadeIn delay={100}>
-                <div className="bg-background rounded-xl p-8 shadow-sm">
-                  <div className="flex items-center mb-6">
-                    <div className="mr-4 rounded-full overflow-hidden w-14 h-14">
-                      <Image
-                        src="/placeholder.svg?height=56&width=56"
-                        width={56}
-                        height={56}
-                        alt="Client"
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Sarah Johnson</h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">CEO, Fashion Forward</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-300 italic">
-                    "Webliano transformed our online presence. Our website conversion rate increased by 40% and organic
-                    traffic grew by 65% within three months. Their team is professional, responsive, and truly cares
-                    about our success."
-                  </p>
-                </div>
-              </FadeIn>
 
-              {/* Testimonial 2 */}
-              <FadeIn delay={200}>
-                <div className="bg-background rounded-xl p-8 shadow-sm">
-                  <div className="flex items-center mb-6">
-                    <div className="mr-4 rounded-full overflow-hidden w-14 h-14">
-                      <Image
-                        src="/placeholder.svg?height=56&width=56"
-                        width={56}
-                        height={56}
-                        alt="Client"
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Michael Chen</h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">Founder, TechGadgets</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-300 italic">
-                    "The data analysis services provided by Webliano have been game-changing for our business strategy.
-                    We've been able to identify key growth opportunities and optimize our product offerings based on
-                    real customer insights."
-                  </p>
-                </div>
-              </FadeIn>
-            </div>
+            {/* Testimonial Swiper */}
+            <FadeIn delay={100}>
+              <div className="max-w-5xl mx-auto">
+                <TestimonialSwiper testimonials={testimonials} />
+              </div>
+            </FadeIn>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn>
               <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">

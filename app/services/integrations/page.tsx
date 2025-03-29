@@ -9,7 +9,7 @@ export default function IntegrationsServicePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-muted/30 dark:bg-muted/10">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 md:py-32">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ export default function IntegrationsServicePage() {
         </section>
 
         {/* Service Details */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <FadeIn direction="right">
@@ -91,7 +91,7 @@ export default function IntegrationsServicePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">

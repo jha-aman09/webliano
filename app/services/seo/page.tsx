@@ -10,7 +10,7 @@ export default function SeoServicePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-muted/30 dark:bg-muted/10">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 md:py-32">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-32">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
@@ -30,7 +30,7 @@ export default function SeoServicePage() {
         </section>
 
         {/* Service Details */}
-        <section className="py-24">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <FadeIn direction="right">
@@ -94,7 +94,7 @@ export default function SeoServicePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-muted/30 dark:bg-muted/10 py-24">
+        <section className="bg-muted/30 dark:bg-muted/10 py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">
