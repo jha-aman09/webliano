@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useMediaQuery } from "@/hooks/use-mobile"
 
 type TestimonialProps = {
   content: string
@@ -25,6 +26,7 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
   const [touchEnd, setTouchEnd] = useState<number | null>(null)
   const [isPaused, setIsPaused] = useState(false)
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null)
+  const isMobile = useMediaQuery("(max-width: 768px)")
 
   // Reset autoplay timer when index changes
   useEffect(() => {
@@ -171,11 +173,11 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
                   : "",
               )}
             >
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-8 relative overflow-hidden h-[400px] md:h-[350px]">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 md:p-8 relative overflow-hidden">
+                <div className={`grid grid-cols-1 ${isMobile ? "gap-4" : "md:grid-cols-12 gap-8"} items-center`}>
                   {/* Left column - Profile */}
-                  <div className="md:col-span-4 flex flex-col items-center text-center">
-                    <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white/80 shadow-md mb-4">
+                  <div className={`${isMobile ? "" : "md:col-span-4"} flex flex-col items-center text-center`}>
+                    <div className="relative w-16 h-16 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white/80 shadow-md mb-2 md:mb-4">
                       <Image
                         src={testimonial.image || "/placeholder.svg?height=128&width=128"}
                         alt={testimonial.author}
@@ -183,19 +185,21 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
                         className="object-cover"
                       />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-50 mb-1">
+                    <h3 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-gray-50 mb-0 md:mb-1">
                       {testimonial.author}
                     </h3>
-                    <p className="text-primary font-medium mb-1">
+                    <p className="text-primary text-sm md:text-base font-medium mb-0 md:mb-1">
                       {testimonial.role}, {testimonial.company}
                     </p>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">{testimonial.company}</p>
-                    <div className="flex mb-3">
+                    {!isMobile && (
+                      <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">{testimonial.company}</p>
+                    )}
+                    <div className="flex mb-1 md:mb-3">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <svg
                           key={i}
                           className={cn(
-                            "w-5 h-5",
+                            "w-4 h-4 md:w-5 md:h-5",
                             i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300 fill-gray-300",
                           )}
                           xmlns="http://www.w3.org/2000/svg"
@@ -206,25 +210,27 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
                       ))}
                     </div>
                     {testimonial.tag && (
-                      <span className="inline-block bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-200 text-xs px-3 py-1 rounded-full">
+                      <span className="inline-block bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-200 text-xs px-2 py-0.5 rounded-full">
                         {testimonial.tag}
                       </span>
                     )}
                   </div>
 
                   {/* Right column - Quote */}
-                  <div className="md:col-span-8 relative h-full flex flex-col justify-center">
+                  <div className={`${isMobile ? "" : "md:col-span-8"} relative`}>
                     {/* Large quote mark at the top */}
-                    <div className="absolute top-0 left-0 text-blue-200 dark:text-blue-700 text-6xl leading-none opacity-50">
+                    <div className="absolute top-0 left-0 text-blue-200 dark:text-blue-700 text-4xl md:text-6xl leading-none opacity-50">
                       "
                     </div>
 
-                    <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl leading-relaxed pl-6 md:pl-8 relative z-10 mb-4 overflow-y-auto max-h-[250px] pr-2">
-                      {testimonial.content}
-                    </p>
+                    <div className={`${isMobile ? "h-[150px]" : "h-auto"} overflow-y-auto`}>
+                      <p className="text-gray-700 dark:text-gray-200 text-sm md:text-xl leading-relaxed pl-4 md:pl-8 relative z-10 mb-2 md:mb-4">
+                        {testimonial.content}
+                      </p>
+                    </div>
 
                     {/* Large quote mark at the bottom */}
-                    <div className="absolute bottom-0 right-0 text-blue-200 dark:text-blue-700 text-6xl leading-none opacity-50 transform rotate-180">
+                    <div className="absolute bottom-0 right-0 text-blue-200 dark:text-blue-700 text-4xl md:text-6xl leading-none opacity-50 transform rotate-180">
                       "
                     </div>
                   </div>
@@ -236,17 +242,17 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
       </div>
 
       {/* Footer with title and navigation - now separate from the content for smooth transitions */}
-      <div className="bg-blue-600 dark:bg-blue-700 text-white py-4 px-6 rounded-b-3xl flex justify-between items-center">
-        <h3 className="text-xl font-semibold">Success Stories</h3>
-        <div className="flex items-center space-x-4">
+      <div className="bg-blue-600 dark:bg-blue-700 text-white py-3 px-4 md:py-4 md:px-6 rounded-b-3xl flex justify-between items-center">
+        <h3 className="text-base md:text-xl font-semibold">Success Stories</h3>
+        <div className="flex items-center space-x-2 md:space-x-4">
           {/* Pagination dots */}
-          <div className="flex space-x-2">
+          <div className="flex space-x-1 md:space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={cn(
-                  "h-2 rounded-full transition-all duration-300 w-2",
+                  "h-1.5 md:h-2 rounded-full transition-all duration-300 w-1.5 md:w-2",
                   index === currentIndex ? "bg-white" : "bg-white/40 hover:bg-white/60",
                 )}
                 aria-label={`Go to testimonial ${index + 1}`}
@@ -255,20 +261,20 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
           </div>
 
           {/* Navigation buttons */}
-          <div className="flex space-x-2">
+          <div className="flex space-x-1 md:space-x-2">
             <button
               onClick={goToPrev}
-              className="bg-blue-700 dark:bg-blue-800 rounded-full p-2 hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors"
+              className="bg-blue-700 dark:bg-blue-800 rounded-full p-1 md:p-2 hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="h-5 w-5" />
+              <ChevronLeft className="h-4 w-4 md:h-5 md:w-5" />
             </button>
             <button
               onClick={goToNext}
-              className="bg-blue-700 dark:bg-blue-800 rounded-full p-2 hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors"
+              className="bg-blue-700 dark:bg-blue-800 rounded-full p-1 md:p-2 hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-4 w-4 md:h-5 md:w-5" />
             </button>
           </div>
         </div>
