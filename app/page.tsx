@@ -231,8 +231,8 @@ export default function Home() {
         </section>
 
         {/* Process Section */}
-        <section className="py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 relative bg-grid-pattern">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Refined Process</h2>
@@ -341,6 +341,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Overlay for better text readability if needed */}
+          <div className="absolute inset-0 bg-background/50 dark:bg-background/30 z-0"></div>
         </section>
 
         {/* Testimonials Section */}
