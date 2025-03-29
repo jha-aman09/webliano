@@ -189,7 +189,7 @@ export function TestimonialSwiper({ testimonials }: { testimonials: TestimonialP
                       {testimonial.author}
                     </h3>
                     <p className="text-primary text-sm md:text-base font-medium mb-0 md:mb-1">
-                      {testimonial.role}, {testimonial.company}
+                      {testimonial.role}
                     </p>
                     {!isMobile && (
                       <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">{testimonial.company}</p>
