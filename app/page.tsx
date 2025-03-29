@@ -231,7 +231,7 @@ export default function Home() {
         </section>
 
         {/* Process Section */}
-        <section className="py-24 relative bg-grid-pattern">
+        <section className="py-16 relative bg-grid-pattern">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
