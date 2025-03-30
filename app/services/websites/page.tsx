@@ -45,10 +45,10 @@ export default function WebsitesServicePage() {
                                     <div className="bg-blue-100 dark:bg-blue-800/40 text-blue-600 dark:text-blue-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
                                         Web Development
                                     </div>
-                                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
+                                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
                                         Personalized Website Development
                                     </h1>
-                                    <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                                         Custom-designed websites that reflect your brand identity and optimize conversions for your
                                         e-commerce business.
                                     </p>
