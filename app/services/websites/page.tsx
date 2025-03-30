@@ -38,7 +38,7 @@ export default function WebsitesServicePage() {
             <main className="flex-1">
                 {/* Hero Section */}
                 <section className="bg-blue-50 dark:bg-blue-900/20">
-                    <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-24">
+                    <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-36">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <FadeIn>
                                 <div>
