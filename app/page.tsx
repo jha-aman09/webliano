@@ -94,7 +94,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-36">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
               {/* Wireframe Mockup - Now first in DOM order for mobile */}
               <FadeIn delay={300} direction="left" className="lg:order-last mb-6 lg:mb-0">
