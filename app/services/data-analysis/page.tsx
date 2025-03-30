@@ -34,7 +34,7 @@ export default function DataAnalyticsServicePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-teal-50 dark:bg-teal-900/20">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-32">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-36">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <FadeIn>
                 <div>
