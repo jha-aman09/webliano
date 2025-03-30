@@ -28,3 +28,8 @@ export function useMediaQuery(query: string): boolean {
   return matches
 }
 
+// Add the useMobile function
+export function useMobile(): boolean {
+  return useMediaQuery("(max-width: 768px)")
+}
+

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Webliano - Elevate Your E-Commerce Presence",
   description:
     "Webliano provides personalized websites, SEO, data analysis, and media editing services for e-commerce businesses.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
