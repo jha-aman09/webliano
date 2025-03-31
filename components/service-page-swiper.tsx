@@ -100,6 +100,19 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
     setTouchEnd(null)
   }
 
+  const goToSlide = (index: number) => {
+    if (isAnimating || index === currentIndex) return
+
+    setIsAnimating(true)
+    setDirection(index > currentIndex ? "right" : "left")
+    setPreviousIndex(currentIndex)
+    setCurrentIndex(index)
+
+    setTimeout(() => {
+      setIsAnimating(false)
+    }, 500)
+  }
+
   // Get the appropriate animation class for a card
   const getAnimationClass = (index: number) => {
     if (index === currentIndex) {
@@ -176,18 +189,13 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
         </button>
 
         {/* Indicators (desktop only) */}
-        <div className="hidden md:flex justify-center mt-4 space-x-2">
+        <div className="flex justify-center mt-4 space-x-2">
           {mobileServices.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
-                setPreviousIndex(currentIndex)
-                setCurrentIndex(index)
-                setDirection(index > currentIndex ? "right" : "left")
-              }}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "w-6 bg-primary" : "w-2 bg-gray-300 hover:bg-gray-400"
-              }`}
+              onClick={() => goToSlide(index)}
+              className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "w-6 bg-primary" : "w-2 bg-gray-300 hover:bg-gray-400"
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
