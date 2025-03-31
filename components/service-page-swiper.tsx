@@ -188,7 +188,7 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
           <ChevronRight className="h-5 w-5" />
         </button>
 
-        {/* Indicators (desktop only) */}
+        {/* Indicators */}
         <div className="flex justify-center mt-4 space-x-2">
           {mobileServices.map((_, index) => (
             <button
@@ -200,11 +200,6 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
             />
           ))}
         </div>
-      </div>
-
-      {/* Swipe instruction for mobile */}
-      <div className="text-center text-xs text-gray-500 dark:text-gray-400 md:hidden">
-        <p>Swipe left or right to navigate</p>
       </div>
     </div>
   )
