@@ -96,25 +96,13 @@ export default function Home() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
-              {/* Wireframe Mockup - Now first in DOM order for mobile */}
-              <FadeIn delay={300} direction="left" className="lg:order-last mb-6 lg:mb-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-full relative">
-                    <div className="aspect-[16/9] bg-muted/30 dark:bg-muted/10 rounded-xl p-2 md:p-4 transition-all duration-300 hover:shadow-xl">
-                      <WebsiteMockup />
-                    </div>
-                    <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 md:-bottom-8 md:-right-8 bg-background rounded-full p-2 sm:p-3 md:p-4 shadow-lg">
-                      <div className="bg-primary/10 rounded-full p-2 sm:p-3 md:p-4">
-                        <Globe className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-primary" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
 
               {/* Text content - Now second in DOM order for mobile */}
               <FadeIn className="lg:order-first">
                 <div className="space-y-6">
+                  <div className="bg-blue-100 dark:bg-blue-800/40 text-blue-600 dark:text-blue-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
+                    Crafting Digital Presence
+                  </div>
                   <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
                     Elevate your e-commerce presence with{" "}
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
@@ -141,6 +129,20 @@ export default function Home() {
                         Explore services
                       </Button>
                     </Link>
+                  </div>
+                </div>
+              </FadeIn>
+              <FadeIn delay={300} direction="left" className="lg:order-last mb-6 lg:mb-0">
+                <div className="flex items-center justify-center">
+                  <div className="w-full relative">
+                    <div className="aspect-[16/9] bg-muted/30 dark:bg-muted/10 rounded-xl p-2 md:p-4 transition-all duration-300 hover:shadow-xl">
+                      <WebsiteMockup />
+                    </div>
+                    <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 md:-bottom-8 md:-right-8 bg-background rounded-full p-2 sm:p-3 md:p-4 shadow-lg">
+                      <div className="bg-primary/10 rounded-full p-2 sm:p-3 md:p-4">
+                        <Globe className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-primary" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </FadeIn>

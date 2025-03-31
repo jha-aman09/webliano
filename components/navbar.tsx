@@ -397,7 +397,7 @@ export function Navbar() {
                       Web Development
                     </Link>
                     <Link
-                      href="/services/data-analysis"
+                      href="/services/data-analytics"
                       className="flex items-center py-2 text-sm transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
