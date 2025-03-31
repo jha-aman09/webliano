@@ -13,20 +13,37 @@ import {
   Briefcase,
   GraduationCap,
 } from "lucide-react"
-import {
-  SiTableau,
-  SiGoogleanalytics,
-  SiPython,
-  SiR,
-  SiMysql,
-  SiMongodb,
-} from "react-icons/si"
+import { SiTableau, SiGoogleanalytics, SiPython, SiR, SiMysql, SiMongodb } from "react-icons/si"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/animations"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ServicePageSwiper } from "@/components/service-page-swiper"
-import { DashboardMockup } from "@/components/dashboard-mockup"
+import { AnalyticsDashboardMockup } from "@/components/analytics-dashboard-mockup"
+
+// Add custom SVG components for Excel and Power BI
+const ExcelIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className={className} fill="currentColor">
+    <path d="M41,10H25v28h16c0.553,0,1-0.447,1-1V11C42,10.447,41.553,10,41,10z" />
+    <path d="M7,10h18v28H7c-0.553,0-1-0.447-1-1V11C6,10.447,6.447,10,7,10z" />
+    <path d="M29.5,19h8c0.276,0,0.5-0.224,0.5-0.5v-2c0-0.276-0.224-0.5-0.5-0.5h-8c-0.276,0-0.5,0.224-0.5,0.5v2 C29,18.776,29.224,19,29.5,19z" />
+    <path d="M29.5,24h8c0.276,0,0.5-0.224,0.5-0.5v-2c0-0.276-0.224-0.5-0.5-0.5h-8c-0.276,0-0.5,0.224-0.5,0.5v2 C29,23.776,29.224,24,29.5,24z" />
+    <path d="M29.5,29h8c0.276,0,0.5-0.224,0.5-0.5v-2c0-0.276-0.224-0.5-0.5-0.5h-8c-0.276,0-0.5,0.224-0.5,0.5v2 C29,28.776,29.224,29,29.5,29z" />
+    <path d="M29.5,34h8c0.276,0,0.5-0.224,0.5-0.5v-2c0-0.276-0.224-0.5-0.5-0.5h-8c-0.276,0-0.5,0.224-0.5,0.5v2 C29,33.776,29.224,34,29.5,34z" />
+    <path d="M21.5,19h-8c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5h8c0.276,0,0.5,0.224,0.5,0.5v2 C22,18.776,21.776,19,21.5,19z" />
+    <path d="M21.5,24h-8c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5h8c0.276,0,0.5,0.224,0.5,0.5v2 C22,23.776,21.776,24,21.5,24z" />
+    <path d="M21.5,29h-8c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5h8c0.276,0,0.5,0.224,0.5,0.5v2 C22,28.776,21.776,29,21.5,29z" />
+    <path d="M21.5,34h-8c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5h8c0.276,0,0.5,0.224,0.5,0.5v2 C22,33.776,21.776,34,21.5,34z" />
+  </svg>
+)
+
+const PowerBIIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className={className} fill="currentColor">
+    <path d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z M24,40c-8.822,0-16-7.178-16-16 s7.178-16,16-16s16,7.178,16,16S32.822,40,24,40z" />
+    <path d="M24,12c-6.617,0-12,5.383-12,12s5.383,12,12,12s12-5.383,12-12S30.617,12,24,12z M24,32c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S28.411,32,24,32z" />
+    <circle cx="24" cy="24" r="4" />
+  </svg>
+)
 
 export default function DataAnalyticsServicePage() {
   return (
@@ -41,24 +58,24 @@ export default function DataAnalyticsServicePage() {
                   <div className="bg-teal-100 dark:bg-teal-800/40 text-teal-600 dark:text-teal-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
                     Data Analytics
                   </div>
-                  <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
+                  <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
                     Transform Data Into Actionable Insights
                   </h1>
-                  <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                     Comprehensive analytics solutions to uncover insights, guide strategic decisions, and drive growth
                     for your business.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Link href="/contact">
                       <Button
                         size="lg"
-                        className="bg-teal-600 hover:bg-teal-700 text-white transition-all duration-300 hover:scale-105"
+                        className="bg-teal-600 hover:bg-teal-700 text-white w-full sm:w-auto transition-all duration-300 hover:scale-105"
                       >
                         Get a quote
                       </Button>
                     </Link>
                     <Link href="#features">
-                      <Button variant="outline" size="lg" className="transition-all duration-300 hover:scale-105">
+                      <Button variant="outline" size="lg" className="w-full sm:w-auto transition-all duration-300 hover:scale-105">
                         Explore features
                       </Button>
                     </Link>
@@ -68,7 +85,7 @@ export default function DataAnalyticsServicePage() {
               <FadeIn delay={200}>
                 <div className="relative">
                   <div className="aspect-[16/9] bg-white dark:bg-gray-800 rounded-xl p-2 md:p-4 shadow-xl transition-all duration-300 hover:shadow-2xl">
-                    <DashboardMockup />
+                    <AnalyticsDashboardMockup />
                   </div>
                   <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 md:-bottom-8 md:-right-8 bg-white dark:bg-gray-800 rounded-full p-2 sm:p-3 md:p-4 shadow-lg">
                     <div className="bg-teal-100 dark:bg-teal-800/40 rounded-full p-2 sm:p-3 md:p-4">
@@ -327,7 +344,7 @@ export default function DataAnalyticsServicePage() {
                 <Card className="border-blue-200 dark:border-blue-800/40 hover:shadow-md transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-700/60 h-full">
                   <CardHeader className="pb-2">
                     <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                      <SiPython className="h-8 w-8 text-[#F2C811]" />
+                      <PowerBIIcon className="h-8 w-8 text-[#F2C811]" />
                     </div>
                     <CardTitle>Power BI</CardTitle>
                   </CardHeader>
@@ -359,7 +376,7 @@ export default function DataAnalyticsServicePage() {
                 <Card className="border-green-200 dark:border-green-800/40 hover:shadow-md transition-all duration-300 hover:border-green-300 dark:hover:border-green-700/60 h-full">
                   <CardHeader className="pb-2">
                     <div className="bg-green-100 dark:bg-green-900/30 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                      <SiPython className="h-8 w-8 text-[#217346]" />
+                      <ExcelIcon className="h-8 w-8 text-[#217346]" />
                     </div>
                     <CardTitle>Excel</CardTitle>
                   </CardHeader>
@@ -449,7 +466,7 @@ export default function DataAnalyticsServicePage() {
                     link: "/services/data-analytics#tools",
                   },
                   {
-                    icon: <SiPython className="h-5 w-5 text-[#F2C811]" />,
+                    icon: <PowerBIIcon className="h-5 w-5 text-[#F2C811]" />,
                     title: "Power BI",
                     description: "Microsoft's business analytics solution for interactive visualizations",
                     link: "/services/data-analytics#tools",
@@ -461,7 +478,7 @@ export default function DataAnalyticsServicePage() {
                     link: "/services/data-analytics#tools",
                   },
                   {
-                    icon: <SiPython className="h-5 w-5 text-[#217346]" />,
+                    icon: <ExcelIcon className="h-5 w-5 text-[#217346]" />,
                     title: "Excel",
                     description: "Advanced spreadsheet analysis with pivot tables and Power Query",
                     link: "/services/data-analytics#tools",

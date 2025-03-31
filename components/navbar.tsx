@@ -23,6 +23,37 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isOpen, setIsOpen] = React.useState(false)
 
+  const getAccentColor = () => {
+    if (pathname.includes("/services/data-analytics")) {
+      return {
+        bg: "bg-teal-600 hover:bg-teal-700",
+        text: "text-teal-600",
+      }
+    } else if (pathname.includes("/services/seo")) {
+      return {
+        bg: "bg-amber-600 hover:bg-amber-700",
+        text: "text-amber-600",
+      }
+    } else if (pathname.includes("/services/media-editing")) {
+      return {
+        bg: "bg-purple-600 hover:bg-purple-700",
+        text: "text-purple-600",
+      }
+    } else if (pathname.includes("/services/websites")) {
+      return {
+        bg: "bg-blue-600 hover:bg-blue-700",
+        text: "text-blue-600",
+      }
+    } else {
+      return {
+        bg: "bg-primary hover:bg-primary/90",
+        text: "text-primary",
+      }
+    }
+  }
+
+  const accentColor = getAccentColor()
+
   React.useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -44,7 +75,7 @@ export function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full flex items-center justify-between">
-        <Link href="/" className="font-bold text-2xl text-primary">
+        <Link href="/" className={`font-bold text-2xl ${accentColor.text}`}>
           Webliano
         </Link>
 
@@ -100,7 +131,7 @@ export function Navbar() {
                     </Link>
 
                     {/* Data Analytics */}
-                    <Link href="/services/data-analysis" className="group">
+                    <Link href="/services/data-analytics" className="group">
                       <div className="flex items-start p-3 rounded-lg hover:bg-muted/50 transition-colors">
                         <div className="mr-3 flex-shrink-0">
                           <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
@@ -316,7 +347,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <Link href="/contact">
-            <Button className="bg-primary hover:bg-primary/90">Get Started</Button>
+            <Button className={accentColor.bg}>Get Started</Button>
           </Link>
         </div>
 
@@ -553,7 +584,7 @@ export function Navbar() {
               </nav>
               <div className="mt-auto p-4">
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <Button className="w-full bg-primary hover:bg-primary/90">Get Started</Button>
+                  <Button className={`w-full ${accentColor.bg}`}>Get Started</Button>
                 </Link>
               </div>
             </div>
