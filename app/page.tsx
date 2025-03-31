@@ -94,12 +94,12 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 md:py-36">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
 
               {/* Text content - Now second in DOM order for mobile */}
-              <FadeIn className="lg:order-first">
-                <div className="space-y-6">
+              <FadeIn>
+                <div>
                   <div className="bg-blue-100 dark:bg-blue-800/40 text-blue-600 dark:text-blue-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
                     Crafting Digital Presence
                   </div>
