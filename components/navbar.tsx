@@ -188,7 +188,7 @@ export function Navbar() {
                         </div>
                         <div>
                           <h4 className="text-sm font-medium mb-1 group-hover:text-primary transition-colors">
-                            Media Production
+                            Media Editing
                           </h4>
                           <p className="text-xs text-muted-foreground">
                             Professional editing services for your visual content
