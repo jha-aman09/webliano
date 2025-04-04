@@ -56,13 +56,13 @@ export default function WebsitesServicePage() {
                                         <Link href="/contact">
                                             <Button
                                                 size="lg"
-                                                className="bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 hover:scale-105"
+                                                className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto transition-all duration-300 hover:scale-105"
                                             >
                                                 Get a quote
                                             </Button>
                                         </Link>
                                         <Link href="#features">
-                                            <Button variant="outline" size="lg" className="transition-all duration-300 hover:scale-105">
+                                            <Button variant="outline" size="lg" className="w-full sm:w-auto transition-all duration-300 hover:scale-105">
                                                 Explore features
                                             </Button>
                                         </Link>
