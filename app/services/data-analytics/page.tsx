@@ -103,8 +103,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Comprehensive Analytics Solutions</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Comprehensive Analytics Solutions</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   Our data analytics services help you understand your customers, optimize your operations, and make
                   informed decisions that drive growth.
                 </p>
@@ -314,8 +314,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Analytics Tools We Master</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Analytics Tools We Master</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We leverage industry-leading tools and technologies to deliver comprehensive data analysis for your
                   business.
                 </p>
@@ -500,8 +500,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Industries We Serve</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Industries We Serve</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We provide tailored data analytics solutions for businesses across various industries.
                 </p>
               </div>
@@ -670,8 +670,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Data Analytics Approach</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Our Data Analytics Approach</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We follow a systematic, collaborative process to transform your raw data into actionable insights that
                   drive business growth.
                 </p>
@@ -816,8 +816,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">The Webliano Analytics Advantage</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">The Webliano Analytics Advantage</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   What sets our data analytics services apart from the competition
                 </p>
               </div>
@@ -929,8 +929,8 @@ export default function DataAnalyticsServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Frequently Asked Questions</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   Get answers to common questions about our data analytics services
                 </p>
               </div>
@@ -1047,8 +1047,8 @@ export default function DataAnalyticsServicePage() {
             <FadeIn>
               <div className="bg-teal-50 dark:bg-teal-900/20 rounded-2xl p-8 md:p-12 lg:p-16 border border-teal-100 dark:border-teal-800/40">
                 <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Unlock the Power of Your Data?</h2>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                  <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Ready to Unlock the Power of Your Data?</h2>
+                  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8">
                     Let's discuss how our data analytics services can help you make better business decisions and drive
                     growth for your organization.
                   </p>
