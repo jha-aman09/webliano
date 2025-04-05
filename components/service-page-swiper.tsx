@@ -12,6 +12,12 @@ type ServiceCardProps = {
   description: string
   link: string
   type?: "standard" | "cta"
+  // These styling props will be passed directly from the desktop cards
+  bgClass?: string
+  iconBgClass?: string
+  iconClass?: string
+  textClass?: string
+  borderClass?: string
 }
 
 export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }) {
@@ -154,14 +160,21 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
           <div className="relative w-full">
             {mobileServices.map((service, index) => (
               <div key={index} className={`w-full transition-all duration-500 ease-in-out ${getAnimationClass(index)}`}>
-                <div className="bg-background rounded-xl p-5 shadow-sm flex flex-col justify-between min-h-[300px] mx-1 transform transition-transform duration-500 md:hover:scale-[1.02]">
+                <div
+                  className={`${service.bgClass || "bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900/20 dark:to-gray-800/30"} rounded-xl p-5 shadow-sm ${service.borderClass || "border border-gray-200 dark:border-gray-700"} flex flex-col justify-between min-h-[300px] mx-1 transform transition-transform duration-500 md:hover:scale-[1.02]`}
+                >
                   <div>
-                    <div className="bg-primary/10 rounded-full p-2 w-fit mb-3">{service.icon}</div>
-                    <h3 className="text-base font-semibold mb-2">{service.title}</h3>
+                    <div className={`${service.iconBgClass || "bg-primary/10"} rounded-full p-2 w-fit mb-3`}>
+                      {service.icon}
+                    </div>
+                    <h3 className={`text-base font-semibold mb-2 ${service.textClass || ""}`}>{service.title}</h3>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">{service.description}</p>
                   </div>
                   <div className="mt-3">
-                    <Link href={service.link} className="text-primary font-medium flex items-center group text-sm">
+                    <Link
+                      href={service.link}
+                      className={`${service.textClass || "text-primary"} font-medium flex items-center group text-sm`}
+                    >
                       Learn more{" "}
                       <ArrowRight className="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
@@ -172,7 +185,7 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
           </div>
         </div>
 
-        {/* Navigation buttons (desktop only) */}
+        {/* Navigation buttons */}
         <button
           onClick={goToPrev}
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-background/80 rounded-full p-2 shadow-md z-10 hidden md:block hover:bg-background transition-colors"
@@ -200,6 +213,11 @@ export function ServicePageSwiper({ services }: { services: ServiceCardProps[] }
             />
           ))}
         </div>
+      </div>
+
+      {/* Swipe instruction for mobile */}
+      <div className="text-center text-xs text-gray-500 dark:text-gray-400">
+        <p>Swipe left or right to navigate</p>
       </div>
     </div>
   )
