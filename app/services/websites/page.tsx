@@ -90,7 +90,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Comprehensive Website Features</h2>
+                                <h2 className="text-2xl md:text-5xl tracking-tight font-bold mb-6">Comprehensive Website Features</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     Our websites are built with the latest technologies and best practices to ensure optimal performance, security, and user experience.
                                 </p>
