@@ -418,8 +418,8 @@ export default function Home() {
             <FadeIn>
               <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">
                 <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your E-Commerce Presence?</h2>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Ready to Transform Your E-Commerce Presence?</h2>
+                  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8">
                     Schedule a consultation with our experts to discuss your specific needs and how we can help elevate
                     your online business.
                   </p>
