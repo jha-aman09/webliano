@@ -90,7 +90,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-2xl md:text-5xl tracking-tight font-bold mb-6">Comprehensive Website Features</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Comprehensive Website Features</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     Our websites are built with the latest technologies and best practices to ensure optimal performance, security, and user experience.
                                 </p>
@@ -295,7 +295,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">E-commerce Platforms We Work With</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">E-commerce Platforms We Work With</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     We have expertise in developing and customizing websites on all major e-commerce platforms.
                                 </p>
@@ -566,7 +566,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Industries We Serve</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Industries We Serve</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     We create tailored e-commerce solutions for businesses across various industries.
                                 </p>
@@ -736,7 +736,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Our Development Approach</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Our Development Approach</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     We follow a structured, collaborative process to ensure your website meets your business goals and
                                     exceeds your expectations.
@@ -879,7 +879,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">The Webliano Advantage</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">The Webliano Advantage</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     What sets our website development services apart from the competition
                                 </p>
@@ -999,7 +999,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Technologies We Use</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Technologies We Use</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     We leverage the latest technologies to build fast, secure, and scalable websites that meet your
                                     business needs.
@@ -1070,7 +1070,7 @@ export default function WebsitesServicePage() {
                     <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                         <FadeIn>
                             <div className="text-center max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Frequently Asked Questions</h2>
                                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                                     Get answers to common questions about our website development services
                                 </p>
@@ -1185,7 +1185,7 @@ export default function WebsitesServicePage() {
                         <FadeIn>
                             <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-8 md:p-12 lg:p-16 border border-blue-100 dark:border-blue-800/40">
                                 <div className="max-w-3xl mx-auto text-center">
-                                    <h2 className="text-3xl md:text-5xl tracking-tight font-bold mb-6">Ready to Transform Your Online Presence?</h2>
+                                    <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Ready to Transform Your Online Presence?</h2>
                                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8">
                                         Let's discuss how our website development services can help elevate your e-commerce business to new
                                         heights.
