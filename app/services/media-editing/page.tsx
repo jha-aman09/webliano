@@ -79,8 +79,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Comprehensive Media Editing Solutions</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Comprehensive Media Editing Solutions</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   Our professional editing services enhance your visual content to captivate your audience and drive
                   engagement across all platforms.
                 </p>
@@ -290,8 +290,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Professional Tools We Master</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Professional Tools We Master</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We leverage industry-standard software and technologies to deliver exceptional visual content for your
                   business.
                 </p>
@@ -444,8 +444,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Industries We Serve</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Industries We Serve</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We provide tailored media editing solutions for businesses across various industries.
                 </p>
               </div>
@@ -614,8 +614,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Media Production Approach</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Our Media Production Approach</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   We follow a systematic, collaborative process to transform your visual content into compelling assets
                   that drive engagement and sales.
                 </p>
@@ -759,8 +759,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">The Webliano Media Advantage</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">The Webliano Media Advantage</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   What sets our media editing services apart from the competition
                 </p>
               </div>
@@ -876,8 +876,8 @@ export default function MediaEditingServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Frequently Asked Questions</h2>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   Get answers to common questions about our media editing services
                 </p>
               </div>
@@ -991,8 +991,8 @@ export default function MediaEditingServicePage() {
             <FadeIn>
               <div className="bg-purple-50 dark:bg-purple-900/20 rounded-2xl p-8 md:p-12 lg:p-16 border border-purple-100 dark:border-purple-800/40">
                 <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Visual Content?</h2>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                  <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Ready to Transform Your Visual Content?</h2>
+                  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8">
                     Let's discuss how our media editing services can help showcase your products in the best possible
                     light and drive more sales.
                   </p>
