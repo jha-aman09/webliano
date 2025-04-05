@@ -94,7 +94,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 md:py-36">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 md:py-32">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
 
               {/* Text content - Now second in DOM order for mobile */}
@@ -103,7 +103,7 @@ export default function Home() {
                   <div className="bg-blue-100 dark:bg-blue-800/40 text-blue-600 dark:text-blue-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
                     Crafting Digital Presence
                   </div>
-                  <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
+                  <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
                     Elevate your e-commerce presence with{" "}
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
                       tailored solutions
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-2xl md:text-5xl tracking-tight font-bold mb-6">Comprehensive Services for Digital Growth</h2>
+                <h2 className="text-2xl md:text-4xl tracking-tight font-bold mb-6">Comprehensive Services for Digital Growth</h2>
                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
                   Each service is meticulously crafted to elevate your e-commerce business to new heights.
                 </p>
@@ -280,7 +280,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-10">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Refined Process</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Refined Process</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   A seamless journey from initial consultation to ongoing support.
                 </p>
@@ -396,7 +396,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn>
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Trusted by Leading Brands</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-6">Trusted by Leading Brands</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   See how our solutions have transformed businesses like yours.
                 </p>
@@ -418,7 +418,7 @@ export default function Home() {
             <FadeIn>
               <div className="bg-primary/5 rounded-2xl p-8 md:p-12 lg:p-16 border border-primary/10">
                 <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Ready to Transform Your E-Commerce Presence?</h2>
+                  <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-6">Ready to Transform Your E-Commerce Presence?</h2>
                   <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8">
                     Schedule a consultation with our experts to discuss your specific needs and how we can help elevate
                     your online business.
