@@ -648,7 +648,7 @@ export default function UIUXDesignServicePage() {
                         <h3 className="text-xl font-semibold mb-2 text-indigo-600 dark:text-indigo-400">
                           Discovery & Research
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="tracking-tight text-gray-600 dark:text-gray-300">
                           We begin by understanding your business goals, target audience, and competitive landscape.
                           This phase includes user interviews, market research, and defining key performance indicators.
                         </p>
@@ -679,7 +679,7 @@ export default function UIUXDesignServicePage() {
                         <h3 className="text-xl font-semibold mb-2 text-pink-600 dark:text-pink-400">
                           Strategy & Planning
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="tracking-tight text-gray-600 dark:text-gray-300">
                           We develop a comprehensive design strategy based on research insights. This includes creating
                           user personas, journey maps, and information architecture to guide the design process.
                         </p>
@@ -698,7 +698,7 @@ export default function UIUXDesignServicePage() {
                         <h3 className="text-xl font-semibold mb-2 text-cyan-600 dark:text-cyan-400">
                           Wireframing & Prototyping
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="tracking-tight text-gray-600 dark:text-gray-300">
                           We create low and high-fidelity wireframes to visualize the user interface structure.
                           Interactive prototypes allow for early testing and validation of user flows and interactions.
                         </p>
@@ -729,7 +729,7 @@ export default function UIUXDesignServicePage() {
                         <h3 className="text-xl font-semibold mb-2 text-emerald-600 dark:text-emerald-400">
                           Visual Design
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="tracking-tight text-gray-600 dark:text-gray-300">
                           We create polished visual designs that align with your brand identity. This includes
                           developing UI components, color schemes, typography, and imagery that enhance the user
                           experience.
@@ -749,7 +749,7 @@ export default function UIUXDesignServicePage() {
                         <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-blue-400">
                           Testing & Iteration
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="tracking-tight text-gray-600 dark:text-gray-300">
                           We conduct usability testing to validate design decisions and identify areas for improvement.
                           Iterative refinements ensure the final product meets user needs and business objectives.
                         </p>
