@@ -34,6 +34,11 @@ export function Navbar() {
         bg: "bg-amber-600 hover:bg-amber-700",
         text: "text-amber-600",
       }
+    } else if (pathname.includes("/services/ui-ux-design")) {
+      return {
+        bg: "bg-indigo-600 hover:bg-indigo-700",
+        text: "text-indigo-600",
+      }
     } else if (pathname.includes("/services/media-editing")) {
       return {
         bg: "bg-purple-600 hover:bg-purple-700",

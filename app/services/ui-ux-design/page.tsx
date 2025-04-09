@@ -32,13 +32,13 @@ export default function UIUXDesignServicePage() {
                     <Link href="/contact">
                       <Button
                         size="lg"
-                        className="bg-indigo-600 hover:bg-indigo-700 text-white transition-all duration-300 hover:scale-105"
+                        className="bg-indigo-600 hover:bg-indigo-700 text-white w-full sm:w-auto transition-all duration-300 hover:scale-105"
                       >
                         Get a quote
                       </Button>
                     </Link>
                     <Link href="#features">
-                      <Button variant="outline" size="lg" className="transition-all duration-300 hover:scale-105">
+                      <Button variant="outline" size="lg" className="w-full sm:w-auto transition-all duration-300 hover:scale-105">
                         Explore features
                       </Button>
                     </Link>
