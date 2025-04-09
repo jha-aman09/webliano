@@ -231,7 +231,7 @@ export function Navbar() {
                     </Link>
 
                     {/* UI/UX Design */}
-                    <Link href="/services/websites" className="group">
+                    <Link href="/services/ui-ux-design" className="group">
                       <div className="flex items-start p-3 rounded-lg hover:bg-muted/50 transition-colors">
                         <div className="mr-3 flex-shrink-0">
                           <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
