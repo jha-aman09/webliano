@@ -19,7 +19,7 @@ export default function UIUXDesignServicePage() {
               <FadeIn>
                 <div>
                   <div className="bg-indigo-100 dark:bg-indigo-800/40 text-indigo-600 dark:text-indigo-300 rounded-full px-4 py-2 w-fit mb-6 font-medium text-sm">
-                    User Experience
+                    User Interface / User Experience
                   </div>
                   <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
                     UI/UX Design Services for E-Commerce
