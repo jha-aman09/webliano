@@ -34,6 +34,11 @@ export function Navbar() {
         bg: "bg-amber-600 hover:bg-amber-700",
         text: "text-amber-600",
       }
+    } else if (pathname.includes("/services/integrations")) {
+      return {
+        bg: "bg-green-600 hover:bg-green-700",
+        text: "text-green-600",
+      }
     } else if (pathname.includes("/services/ui-ux-design")) {
       return {
         bg: "bg-indigo-600 hover:bg-indigo-700",
@@ -139,7 +144,7 @@ export function Navbar() {
                     <Link href="/services/data-analytics" className="group">
                       <div className="flex items-start p-3 rounded-lg hover:bg-muted/50 transition-colors">
                         <div className="mr-3 flex-shrink-0">
-                          <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                          <div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="20"
@@ -150,7 +155,7 @@ export function Navbar() {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              className="text-green-600"
+                              className="text-teal-600"
                             >
                               <path d="M21 21H4.6c-.6 0-1-.4-1-1V3"></path>
                               <path d="M5 16l4-4 4 4 8-8"></path>
@@ -268,11 +273,11 @@ export function Navbar() {
                       </div>
                     </Link>
 
-                    {/* Content Strategy */}
-                    <Link href="/services/content" className="group">
+                    {/* Custom Integrations */}
+                    <Link href="/services/integrations" className="group">
                       <div className="flex items-start p-3 rounded-lg hover:bg-muted/50 transition-colors">
                         <div className="mr-3 flex-shrink-0">
-                          <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
+                          <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="20"
@@ -283,18 +288,19 @@ export function Navbar() {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              className="text-red-600"
+                              className="text-green-600"
                             >
-                              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                              <path d="M13 2v7h7"></path>
+                              <rect width="8" height="8" x="3" y="3" rx="2" />
+                              <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+                              <rect width="8" height="8" x="13" y="13" rx="2" />
                             </svg>
                           </div>
                         </div>
                         <div>
                           <h4 className="text-sm font-medium mb-1 group-hover:text-primary transition-colors">
-                            Content Strategy
+                            Custom Integrations
                           </h4>
-                          <p className="text-xs text-muted-foreground">Engaging content plans that drive conversions</p>
+                          <p className="text-xs text-muted-foreground">Connect your systems seamlessly</p>
                         </div>
                       </div>
                     </Link>
