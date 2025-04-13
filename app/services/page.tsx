@@ -362,9 +362,9 @@ export default function ServicesPage() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/pricing">
+                  <Link href="#services">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto px-8">
-                      View Pricing
+                      View All Services
                     </Button>
                   </Link>
                 </div>
