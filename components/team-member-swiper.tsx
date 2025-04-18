@@ -131,10 +131,6 @@ const TeamMemberCard = ({ member }) => {
                 <span>{member.location}</span>
               </div>
               <div className="flex items-center">
-                <Calendar className="h-4 w-4 mr-2" />
-                <span>Joined {member.joinDate}</span>
-              </div>
-              <div className="flex items-center">
                 <GraduationCap className="h-4 w-4 mr-2" />
                 <span>{member.education}</span>
               </div>
@@ -147,16 +143,11 @@ const TeamMemberCard = ({ member }) => {
               <h4 className="text-lg font-semibold mb-2">About</h4>
               <p className="text-muted-foreground mb-4">{member.bio}</p>
 
-              {/* Quote */}
-              <div className="relative italic text-sm bg-muted/30 p-4 rounded-lg border-l-4 border-primary/50 mb-4">
-                <span className="text-2xl absolute -top-2 -left-2 text-primary/30">"</span>
-                {member.quote}
-                <span className="text-2xl absolute -bottom-4 -right-2 text-primary/30">"</span>
-              </div>
+
             </div>
 
             <div className="mb-4">
-              <h4 className="text-sm font-medium text-muted-foreground mb-2">Expertise</h4>
+              <h4 className="text-sm font-bold text-muted-foreground mb-2">Expertise</h4>
               <div className="flex flex-wrap gap-2">
                 {member.skills.map((skill, i) => (
                   <Badge key={i} variant="outline" className="bg-primary/5">
@@ -168,7 +159,7 @@ const TeamMemberCard = ({ member }) => {
 
             {/* Current projects preview */}
             <div>
-              <h4 className="text-sm font-medium text-muted-foreground mb-2 flex items-center">
+              <h4 className="text-sm font-bold text-muted-foreground mb-2 flex items-center">
                 <Briefcase className="h-4 w-4 mr-2 text-primary" />
                 Current Projects
               </h4>
