@@ -82,12 +82,12 @@ const TeamMemberCard = ({ member }) => {
   const departmentColor = getDepartmentColor(member.department)
 
   return (
-    <div className="group relative rounded-xl border bg-background transition-all duration-300 mb-8 overflow-hidden h-full">
+    <div className="group relative rounded-xl border bg-background transition-all duration-300 mb-0 overflow-hidden h-full">
       {/* Department color indicator */}
       <div className={`h-1.5 w-full ${departmentColor}`}></div>
 
       <div className="p-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Left column - Image and basic info */}
           <div className="flex flex-col items-center md:items-start">
             <div className="relative mb-4 w-32 h-32 overflow-hidden rounded-lg border shadow-sm group-hover:shadow-md transition-all duration-300">
