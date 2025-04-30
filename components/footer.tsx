@@ -111,29 +111,36 @@ export function Footer() {
             <h3 className="font-semibold text-sm tracking-wider uppercase mb-4">Legal</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/privacy" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  href="/legal/privacy-policy"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  href="/legal/terms-of-service"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                >
                   Terms of Service
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="/accessibility"
+                  href="/legal/cookie-policy"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                 >
-                  Accessibility
+                  Cookie Policy
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cookie-policy"
+                  href="/legal/refund-policy"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                 >
-                  Cookie Policy
+                  Refund Policy
                 </Link>
               </li>
             </ul>
@@ -148,4 +155,3 @@ export function Footer() {
     </footer>
   )
 }
-

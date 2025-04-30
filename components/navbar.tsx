@@ -34,16 +34,6 @@ export function Navbar() {
         bg: "bg-amber-600 hover:bg-amber-700",
         text: "text-amber-600",
       }
-    } else if (pathname.includes("/services/integrations")) {
-      return {
-        bg: "bg-green-600 hover:bg-green-700",
-        text: "text-green-600",
-      }
-    } else if (pathname.includes("/services/ui-ux-design")) {
-      return {
-        bg: "bg-indigo-600 hover:bg-indigo-700",
-        text: "text-indigo-600",
-      }
     } else if (pathname.includes("/services/media-editing")) {
       return {
         bg: "bg-purple-600 hover:bg-purple-700",
@@ -53,6 +43,16 @@ export function Navbar() {
       return {
         bg: "bg-blue-600 hover:bg-blue-700",
         text: "text-blue-600",
+      }
+    } else if (pathname.includes("/services/integrations")) {
+      return {
+        bg: "bg-green-600 hover:bg-green-700",
+        text: "text-green-600",
+      }
+    } else if (pathname.includes("/services/ui-ux-design")) {
+      return {
+        bg: "bg-indigo-600 hover:bg-indigo-700",
+        text: "text-indigo-600",
       }
     } else {
       return {
@@ -155,7 +155,7 @@ export function Navbar() {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              className="text-teal-600"
+                              className="text-green-600"
                             >
                               <path d="M21 21H4.6c-.6 0-1-.4-1-1V3"></path>
                               <path d="M5 16l4-4 4 4 8-8"></path>
@@ -300,7 +300,7 @@ export function Navbar() {
                           <h4 className="text-sm font-medium mb-1 group-hover:text-primary transition-colors">
                             Custom Integrations
                           </h4>
-                          <p className="text-xs text-muted-foreground">Connect your systems seamlessly</p>
+                          <p className="text-xs text-muted-foreground">Seamlessly connect your systems and workflows</p>
                         </div>
                       </div>
                     </Link>
@@ -326,18 +326,6 @@ export function Navbar() {
                   )}
                 >
                   About
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/pricing" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:bg-accent focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-accent hover:text-accent-foreground h-10 py-2 px-4 transition-all duration-200",
-                    pathname === "/pricing" ? "text-primary" : "text-foreground",
-                  )}
-                >
-                  Pricing
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -412,7 +400,7 @@ export function Navbar() {
                       className="flex items-center py-2 text-sm transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
-                      <div className="w-8 h-8 rounded-md bg-green-100 flex items-center justify-center mr-3">
+                      <div className="w-8 h-8 rounded-md bg-teal-100 flex items-center justify-center mr-3">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -479,6 +467,34 @@ export function Navbar() {
                         </svg>
                       </div>
                       SEO Optimization
+                    </Link>
+                    <Link
+                      href="/services/integrations"
+                      className="flex items-center py-2 text-sm transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <div className="w-8 h-8 rounded-md bg-green-100 flex items-center justify-center mr-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-green-600"
+                        >
+                          <path d="M2 3h20v5H2V3z"></path>
+                          <path d="M2 16h20v5H2v-5z"></path>
+                          <path d="M7 8v8"></path>
+                          <path d="M17 8v8"></path>
+                          <path d="M2 11h5"></path>
+                          <path d="M17 11h5"></path>
+                        </svg>
+                      </div>
+                      Custom Integrations
                     </Link>
 
                     {/* All Services Link */}
@@ -547,29 +563,6 @@ export function Navbar() {
                     Projects
                   </Link>
                   <Link
-                    href="/pricing"
-                    className="flex items-center py-2 text-sm transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <div className="w-8 h-8 rounded-md flex items-center justify-center mr-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <line x1="12" y1="1" x2="12" y2="23"></line>
-                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                      </svg>
-                    </div>
-                    Pricing
-                  </Link>
-                  <Link
                     href="/contact"
                     className="flex items-center py-2 text-sm transition-colors"
                     onClick={() => setIsOpen(false)}
@@ -605,4 +598,3 @@ export function Navbar() {
     </header>
   )
 }
-
