@@ -848,14 +848,6 @@ export default function ContactPageComponent() {
                   </Card>
                 </div>
               </div>
-
-              <div className="mt-12 text-center">
-                <p className="text-muted-foreground mb-6">Still have questions? We're here to help!</p>
-                <Button size="lg" onClick={scrollToForm} className="group">
-                  Contact Us
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
             </FadeIn>
           </div>
         </section>
